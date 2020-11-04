@@ -4,7 +4,6 @@ diccionario={}
 diccionario2={}
 print("*"*30,"Bievenido","*"*30)
 
-persona="Persona"
 personas=int(input("Cuantas personas vas a registrar : "))
 lista_index=[]
 opcion=1
@@ -34,7 +33,7 @@ while opcion==1:
     diccionario2["Estatura"]=lista_estatura
     diccionario2["Peso"]=lista_peso
     diccionario1=pd.DataFrame(diccionario2)
-    lista_index.append(contador)
+
     
     for nombre in range(1,personas+1):
         diccionario1.index=[lista_nombre]
